@@ -1,0 +1,49 @@
+# Site settings
+title:            Hemerson Vianna
+description:      ""
+email: hemerson.lourenco@gmail.com
+maintext: Olá, sou Hemerson Vianna. Desenvolvedor Front-End por profissão e Full Stack Web Developer por paixão. Com 28 anos de experiência de vida, gosto de compartilhar ideias sobre TI e outros assuntos ( Calistenia, Japonês, música e etc ).
+logo:             logo.png
+disqus_shortname: hemersonvianna
+default_locale:     "pt-br"
+
+# Handling Reading
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Change url to your domain. Leave localhost server or blank when working locally.
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
+# whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
+url:
+baseurl: ""
+destination: ../../../public/
+
+# Information about author
+#
+author :
+  name : Hemerson Vianna
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-27637132-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Sao_Paulo
+future:      true
+highlighter: pygments
+markdown:    redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables", "with_toc_data"]
+paginate:    5
+paginate_path: "page:num"
+
+gems:
+  - jekyll-sitemap
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
